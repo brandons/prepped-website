@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --card: #1a1a26;
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #f0f0f5;
+    --text-secondary: rgba(255, 255, 255, 0.5);
+    --accent: #6ee7b7;
+    --accent-dim: rgba(110, 231, 183, 0.12);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Nav */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+}
+
+.nav-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: -0.3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+/* Main */
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+    padding: 80px 0 48px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 420px;
+    margin: 0 auto 24px;
+}
+
+.chips {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chip {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 6px 14px;
+    border-radius: 100px;
+    border: 1px solid rgba(110, 231, 183, 0.2);
+}
+
+/* Links section */
+.links-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-bottom: 80px;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    padding: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.card-link:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.card-link h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.card-link p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Legal page */
+.legal {
+    padding: 48px 0 80px;
+}
+
+.legal h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.legal .effective-date {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.legal h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.legal p, .legal li {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.legal ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.legal li {
+    margin-bottom: 6px;
+}
+
+.legal a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+footer p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--text);
+}
+
+@media (max-width: 520px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .links-section {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
