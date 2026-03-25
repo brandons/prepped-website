@@ -21,65 +21,91 @@
     <main>
         <article class="legal">
             <h1>Privacy Policy</h1>
-            <p class="effective-date">Effective date: March 18, 2026</p>
-
-            <p>PrEPPED ("we", "our", or "the app") is a sexual health tracking application. We built PrEPPED with privacy as a core principle. This policy explains what data we collect, how it is stored, and your rights.</p>
-
-            <h2>1. Data Storage</h2>
-            <p>All health data you enter into PrEPPED — including PrEP dose logs, encounter records, STI test results, vaccine records, and related notes — is stored <strong>locally on your device</strong>. We do not operate servers that receive, store, or process your health data.</p>
-            <p>Your data is saved using Apple's on-device storage frameworks (SwiftData). It is not uploaded to any cloud service, and we have no ability to access it.</p>
-
-            <h2>2. Data We Do Not Collect</h2>
-            <p>We do not collect:</p>
-            <ul>
-                <li>Names, email addresses, or account credentials (PrEPPED has no accounts)</li>
-                <li>Health data (PrEP logs, encounters, test results, vaccine records)</li>
-                <li>Location data</li>
-                <li>Photos or documents you attach to test records</li>
-                <li>Partner information</li>
-            </ul>
-
-            <h2>3. Third-Party Services</h2>
-            <p>PrEPPED uses the following third-party services:</p>
-            <ul>
-                <li><strong>RevenueCat</strong> — to manage in-app subscriptions (PrEPPED Pro). RevenueCat receives an anonymous app user ID and purchase transaction data from Apple. It does not receive any health data. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</li>
-                <li><strong>Apple App Store</strong> — handles payment processing for subscriptions. Apple's standard terms and privacy policy apply.</li>
-            </ul>
-            <p>We do not use analytics SDKs, advertising frameworks, or tracking pixels.</p>
-
-            <h2>4. Notifications</h2>
-            <p>If you enable reminders (PrEP dose reminders, testing reminders), these are scheduled locally on your device using Apple's notification system. Notification content is generated on-device and is not sent through our servers. If you enable "Discreet Notifications," reminder text is replaced with generic language.</p>
-
-            <h2>5. Apple Watch &amp; Widgets</h2>
-            <p>If you use the PrEPPED Apple Watch app or home screen widgets, data is transferred between your iPhone and Watch using Apple's WatchConnectivity framework. This communication happens directly between your paired devices and does not pass through any external server.</p>
-
-            <h2>6. Siri Shortcuts</h2>
-            <p>PrEPPED offers Siri Shortcuts for quick actions (logging a dose, checking your streak). These intents are processed on-device by iOS. We do not receive voice data or Siri interaction logs.</p>
-
-            <h2>7. Data Deletion</h2>
-            <p>You can delete all data at any time from Settings &gt; Delete All Data within the app. This permanently removes all encounters, tests, medication logs, and preferences from your device. Because we do not store your data remotely, deletion is immediate and irreversible.</p>
-            <p>Uninstalling the app also removes all stored data.</p>
-
-            <h2>8. Biometric Security</h2>
-            <p>PrEPPED supports Face ID / Touch ID to lock the app. Biometric data is handled entirely by Apple's LocalAuthentication framework. We never access, store, or transmit biometric data.</p>
-
-            <h2>9. Children</h2>
-            <p>PrEPPED is not intended for use by anyone under the age of 17. We do not knowingly collect data from minors.</p>
-
-            <h2>10. Changes to This Policy</h2>
-            <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance.</p>
-
-            <h2>11. Contact</h2>
-            <p>If you have questions about this privacy policy, contact us at <a href="mailto:privacy@getpreppedapp.com">privacy@getpreppedapp.com</a>.</p>
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 PrEPPED. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms &amp; Conditions</a>
-        </div>
-    </footer>
+              <div class="effective-date">Effective date: March 25, 2026</div>
+             
+              <div class="intro">
+                PrEPPED was built with privacy as a core principle. All of your health data stays on your device. We do not operate servers that store your personal or health information, and we have no ability to access it. Anonymous crash reports are collected to help us identify and fix technical issues — these contain no health data.
+              </div>
+             
+              <div class="section">
+                <h2>1. Data Storage</h2>
+                <p>All health data you enter into PrEPPED — including PrEP dose logs, encounter records, STI test results, partner information, Doxy PEP courses, and related notes — is stored locally on your device using Apple's Core Data framework. It is not uploaded to any cloud service, and we have no ability to access it.</p>
+              </div>
+             
+              <div class="section">
+                <h2>2. Data We Do Not Collect</h2>
+                <p>We do not collect:</p>
+                <ul>
+                  <li>Names, email addresses, or account credentials — PrEPPED has no accounts</li>
+                  <li>Health data — PrEP logs, encounters, test results, partner information, or symptom records</li>
+                  <li>Persistent location data — your location is used only to determine your zip code to find nearby clinics and is not stored (see Section 3)</li>
+                  <li>Behavioural analytics or usage patterns</li>
+                </ul>
+                <p>Anonymous crash diagnostics are collected as described in Section 3. These contain no health data or personal information.</p>
+              </div>
+             
+              <div class="section">
+                <h2>3. Third-Party Services</h2>
+                <p>PrEPPED uses the following third-party services:</p>
+             
+                <p><strong>RevenueCat</strong> — manages in-app subscriptions (PrEPPED Premium). RevenueCat receives an anonymous app user ID and purchase transaction data from Apple. It does not receive any health data. <a href="https://www.revenuecat.com/privacy" target="_blank">See RevenueCat's Privacy Policy.</a></p>
+             
+                <p><strong>CDC NPIN API</strong> — powers the clinic finder feature. When you use the clinic finder, your zip code determined by your current location is sent to the US Centers for Disease Control and Prevention's National Prevention Information Network to retrieve nearby PrEP providers. No personal information, health data, or identifiers are included in this request. <a href="https://www.cdc.gov/other/privacy.html" target="_blank">See CDC's Privacy Policy.</a></p>
+             
+                <p><strong>Sentry</strong> — used for anonymous crash reporting to identify and fix technical issues. Sentry receives device model, iOS version, app version, and crash stack traces when the app crashes. No health data, personal information, partner names, or any user-generated content is included in crash reports. <a href="https://sentry.io/privacy/" target="_blank">See Sentry's Privacy Policy.</a></p>
+             
+                <p><strong>Apple App Store</strong> — handles payment processing for subscriptions. Apple's standard terms and privacy policy apply.</p>
+             
+                <p>We do not use analytics SDKs, advertising frameworks, or tracking pixels.</p>
+              </div>
+             
+              <div class="section">
+                <h2>4. Location Data</h2>
+                <p>PrEPPED requests access to your location only when you use the clinic finder feature. Your location is used solely to find PrEP providers near you and is sent to the CDC NPIN API for this purpose. It is not stored on our servers, not linked to your identity, and not used for any other purpose. You can use all other features of PrEPPED without granting location access.</p>
+              </div>
+             
+              <div class="section">
+                <h2>5. Notifications</h2>
+                <p>If you enable reminders — PrEP dose reminders, Doxy PEP dose reminders, or testing reminders — these are scheduled locally on your device using Apple's notification system. Notification content is generated on-device and is not sent through our servers. If you enable Discreet Notifications in settings, reminder text is replaced with generic language that does not reference health content.</p>
+              </div>
+             
+              <div class="section">
+                <h2>6. Apple Watch and Widgets</h2>
+                <p>If you use the PrEPPED Apple Watch app or home screen widgets, data is transferred between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This communication happens directly between your paired devices and does not pass through any external server.</p>
+              </div>
+             
+              <div class="section">
+                <h2>7. Data Deletion</h2>
+                <p>You can delete all data at any time from Settings → Delete All Data within the app. This permanently removes all encounters, test results, medication logs, partner information, and preferences from your device. Because we do not store your data remotely, deletion is immediate and irreversible.</p>
+                <p>Uninstalling the app permanently removes all stored data from your device. Because we do not store your data remotely, this cannot be recovered. We recommend using the Delete All Data option in settings before uninstalling if you want to confirm all data is removed.</p>
+              </div>
+             
+              <div class="section">
+                <h2>8. Biometric Security</h2>
+                <p>PrEPPED supports biometric (Face ID, Touch ID) to lock the app. Biometric data is handled entirely by Apple's LocalAuthentication framework. We never access, store, or transmit biometric data.</p>
+              </div>
+             
+              <div class="section">
+                <h2>9. Children</h2>
+                <p>PrEPPED is a sexual health app rated 17+ on the App Store. It is designed for people on PrEP or considering PrEP.</p>
+              </div>
+             
+              <div class="section">
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the updated policy. We will not make changes that materially reduce your privacy protections without prominent notice.</p>
+              </div>
+             
+              <div class="section">
+                <h2>11. Contact</h2>
+                <p>If you have questions about this privacy policy or how PrEPPED handles your data, contact us at <a href="mailto:privacy@getpreppedapp.com">privacy@getpreppedapp.com</a>.</p>
+              </div>
+             
+              <footer>
+                <span>© 2026 PrEPPED. All rights reserved.</span>
+                <span>
+                  <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+                  <a href="terms.html">Terms &amp; Conditions</a>
+                </span>
+              </footer>
 </body>
 </html>
