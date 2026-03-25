@@ -48,22 +48,13 @@
                 <h2>3. Third-Party Services</h2>
                 <p>PrEPPED uses the following third-party services:</p>
              
-                <p><strong>RevenueCat</strong> — manages in-app subscriptions (PrEPPED Premium). RevenueCat receives an anonymous app user ID and purchase transaction data from Apple. It does not receive any health data. <a href="https://www.revenuecat.com/privacy" target="_blank">See RevenueCat's Privacy Policy.</a></p>
+                <p><strong>RevenueCat</strong> — acts as a data processor to manage in-app subscriptions on our behalf. RevenueCat processes an anonymous app user ID and purchase transaction data from Apple solely to manage your subscription state. It does not receive any health data and does not use this data for its own purposes. <a href="https://www.revenuecat.com/privacy" target="_blank">See RevenueCat's Privacy Policy.</a>
              
                 <p><strong>CDC NPIN API</strong> — powers the clinic finder feature. When you use the clinic finder, your zip code determined by your current location is sent to the US Centers for Disease Control and Prevention's National Prevention Information Network to retrieve nearby PrEP providers. No personal information, health data, or identifiers are included in this request. <a href="https://www.cdc.gov/other/privacy.html" target="_blank">See CDC's Privacy Policy.</a></p>
              
                 <p><strong>Sentry</strong> — used for anonymous crash reporting to identify and fix technical issues. Sentry receives device model, iOS version, app version, and crash stack traces when the app crashes. No health data, personal information, partner names, or any user-generated content is included in crash reports. <a href="https://sentry.io/privacy/" target="_blank">See Sentry's Privacy Policy.</a></p>
              
-                <p><strong>TelemetryDeck</strong> — used for anonymous usage analytics to understand how the app is used in aggregate and improve it over time. TelemetryDeck receives:</p>
-                 <ul>
-                   <li>Device model, iOS version, and app version</li>
-                   <li>Device timezone and region — used to understand usage patterns, not to identify your location</li>
-                   <li>Color scheme and language preferences</li>
-                   <li>Accessibility settings — text size preference, reduce motion, bold text</li>
-                   <li>Anonymised session data — session duration, number of sessions, days used</li>
-                   <li>An anonymised user identifier — this is hashed on your device using a one-way process before transmission. TelemetryDeck cannot reverse it to identify you, and neither can we.</li>
-                 </ul>
-                 <p>No health data, personal information, or advertising identifiers are collected by TelemetryDeck. All data is aggregated and cannot be traced back to an individual. <a href="https://telemetrydeck.com/privacy/" target="_blank">See TelemetryDeck's Privacy Policy.</a></p>
+                <p><strong>TelemetryDeck</strong> — used for anonymous usage analytics to improve the user experience. TelemetryDeck uses a privacy-first architecture that hashes all user identifiers on-device before transmission using a daily rotating salt. This means neither TelemetryDeck nor PrEPPED can identify individual users from analytics data. TelemetryDeck does not collect personally identifiable information and their data collection does not fall under GDPR or similar privacy laws by design. <a href="https://telemetrydeck.com/privacy/" target="_blank">See TelemetryDeck's Privacy Policy.</a></p>
           
                 <p><strong>Apple App Store</strong> — handles payment processing for subscriptions. Apple's standard terms and privacy policy apply.</p>
               </div>
