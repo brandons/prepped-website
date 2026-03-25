@@ -54,14 +54,23 @@
              
                 <p><strong>Sentry</strong> — used for anonymous crash reporting to identify and fix technical issues. Sentry receives device model, iOS version, app version, and crash stack traces when the app crashes. No health data, personal information, partner names, or any user-generated content is included in crash reports. <a href="https://sentry.io/privacy/" target="_blank">See Sentry's Privacy Policy.</a></p>
              
+                <p><strong>TelemetryDeck</strong> — used for anonymous usage analytics to understand how the app is used in aggregate and improve it over time. TelemetryDeck receives:</p>
+                 <ul>
+                   <li>Device model, iOS version, and app version</li>
+                   <li>Device timezone and region — used to understand usage patterns, not to identify your location</li>
+                   <li>Color scheme and language preferences</li>
+                   <li>Accessibility settings — text size preference, reduce motion, bold text</li>
+                   <li>Anonymised session data — session duration, number of sessions, days used</li>
+                   <li>An anonymised user identifier — this is hashed on your device using a one-way process before transmission. TelemetryDeck cannot reverse it to identify you, and neither can we.</li>
+                 </ul>
+                 <p>No health data, personal information, or advertising identifiers are collected by TelemetryDeck. All data is aggregated and cannot be traced back to an individual. <a href="https://telemetrydeck.com/privacy/" target="_blank">See TelemetryDeck's Privacy Policy.</a></p>
+          
                 <p><strong>Apple App Store</strong> — handles payment processing for subscriptions. Apple's standard terms and privacy policy apply.</p>
-             
-                <p>We do not use analytics SDKs, advertising frameworks, or tracking pixels.</p>
               </div>
              
               <div class="section">
                 <h2>4. Location Data</h2>
-                <p>PrEPPED requests access to your location only when you use the clinic finder feature. Your location is used solely to find PrEP providers near you and is sent to the CDC NPIN API for this purpose. It is not stored on our servers, not linked to your identity, and not used for any other purpose. You can use all other features of PrEPPED without granting location access.</p>
+                <p>PrEPPED requests access your location only to determine your zip code when you use the clinic finder feature. Your zip code is used solely to find PrEP providers near you and is sent to the CDC NPIN API for this purpose. It is not stored on our servers, not linked to your identity, and not used for any other purpose. You can use all other features of PrEPPED without granting location access.</p>
               </div>
              
               <div class="section">
