@@ -3,56 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrEPPED+ — Take Control of Your Sexual Health</title>
-    <meta name="description" content="PrEPPED+ helps you track PrEP doses, STI testing, and sexual health — all private, all on your device.">
+    <title>PrEPPED+ — Your Health, Covered</title>
+    <meta name="description" content="PrEPPED+ is the sexual health app built for gay men. Track your PrEP, log your hookups, get tested on schedule. All private, all on your phone.">
+    <meta name="theme-color" content="#0F0E11">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
         <div class="nav-inner">
             <a href="/" class="logo">PrEPPED+</a>
-            <div class="nav-links">
-                <a href="/privacy.html">Privacy</a>
-                <a href="/terms.html">Terms</a>
-                <a href="/support.html">Support</a>
-            </div>
+            <a href="#" class="nav-cta">Download</a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Ambient orbs -->
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+
     <main>
+
+        <!-- ====== HERO: Full-bleed photo with overlay ====== -->
         <section class="hero">
-            <h1>Take Control of<br>Your Sexual Health</h1>
-            <p class="subtitle">Track your PrEP doses. Stay on top of testing. Everything stays on your device.</p>
-            <div class="chips">
-                <span class="chip">PrEP tracking</span>
-                <span class="chip">STI testing</span>
-                <span class="chip">Private</span>
+            <div class="hero-photo">
+                <img src="images/hero-3.jpg" alt="Man walking confidently through the city at night" fetchpriority="high">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content" data-hero>
+                <span class="hero-eyebrow">THE SEXUAL HEALTH APP FOR GAY MEN</span>
+                <h1>Your Health,<br><span class="accent">Covered.</span></h1>
+                <p class="hero-sub">Track your PrEP. Log your hookups. Stay on top of testing. All private, all on your phone.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        Download Free
+                    </a>
+                    <span class="hero-note">No account needed. Ever.</span>
+                </div>
             </div>
         </section>
 
-        <section class="links-section">
-            <a href="/privacy.html" class="card-link">
-                <h3>Privacy Policy</h3>
-                <p>How we protect your data</p>
-            </a>
-            <a href="/terms.html" class="card-link">
-                <h3>Terms &amp; Conditions</h3>
-                <p>Terms of use for PrEPPED+</p>
-            </a>
-            <a href="/support.html" class="card-link">
-                <h3>Support</h3>
-                <p>Get help with PrEPPED+</p>
+        <!-- ====== TRUST STRIP ====== -->
+        <section class="trust-strip" data-animate>
+            <div class="trust-inner">
+                <div class="trust-item">
+                    <strong>100%</strong> on-device
+                </div>
+                <div class="trust-sep"></div>
+                <div class="trust-item">
+                    <strong>Zero</strong> accounts
+                </div>
+                <div class="trust-sep"></div>
+                <div class="trust-item">
+                    <strong>Free</strong> core features
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== FEATURES OVERVIEW ====== -->
+        <section class="features" data-animate>
+            <div class="section-intro">
+                <span class="eyebrow">ONE APP, ALL OF IT</span>
+                <h2>PrEP. Testing. Partners.<br>All in one place.</h2>
+                <p>Track your dose, build your streak, log your hookups, and stay on top of testing. Written for gay men, not around them.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="f-card f-card--hero" data-animate>
+                    <div class="f-icon" style="--c: var(--green)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>PrEP Dose Tracking</h3>
+                    <p>Log your daily dose with a single tap. Watch your protection ring fill: 7 consecutive days means full coverage. Build your streak, earn milestones, and get smart reminders so you stay consistent. Supports daily, on-demand 2-1-1, and injectable regimens.</p>
+                    <span class="f-badge">Core Feature</span>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--red)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>STI Testing</h3>
+                    <p>Log every test, track results by site, and import labs from Apple Health. Quarterly reminders keep you on schedule. Symptom tracking with photos if you need it.</p>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--amber)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Hookup Log</h3>
+                    <p>Log who, when, and what. Private partner profiles, protection status, and full history. See your patterns and know when it's time to test.</p>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--cyan)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    </div>
+                    <h3>Doxy PEP</h3>
+                    <p>An antibiotic you take after sex to prevent bacterial STIs. Log your dose within 72 hours. PrEPPED+ tracks the timing for you.</p>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--purple)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Vaccines</h3>
+                    <p>HPV, Hep A/B, Mpox, Meningitis. Log your last shot, we'll track the next one and remind you when it's due.</p>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--green)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
+                    <h3>Learn</h3>
+                    <p>In-app guides covering every major STI, harm reduction, and PrEP deep dives. Sourced from CDC and peer-reviewed research. No pamphlet energy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== LIFESTYLE EDITORIAL BREAK ====== -->
+        <section class="editorial" data-animate>
+            <div class="editorial-grid">
+                <div class="editorial-photo editorial-photo--tall">
+                    <img src="images/hero-1.jpg" alt="Man sitting on brownstone steps in morning light" loading="lazy">
+                    <div class="editorial-caption">Your routine. Your rules.</div>
+                </div>
+                <div class="editorial-photo">
+                    <img src="images/hero-2.jpg" alt="Man training at a boxing gym" loading="lazy">
+                    <div class="editorial-caption">Stay active. Stay covered.</div>
+                </div>
+                <div class="editorial-pull">
+                    <blockquote>"We don't judge, we just count."</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PARTNER NOTIFICATIONS ====== -->
+        <section class="spotlight" data-animate>
+            <div class="spotlight-inner">
+                <div class="spotlight-text">
+                    <span class="eyebrow">ANONYMOUS PARTNER ALERTS</span>
+                    <h2>Test positive?<br>Notify partners in one tap.</h2>
+                    <p>An anonymous text lets them know to get tested. Your name is never shared, no health details are sent, and phone numbers aren't stored after delivery. It's the responsible thing to do, and now it's easy.</p>
+                    <ul class="check-list">
+                        <li>Select from recent partners or enter numbers manually</li>
+                        <li>Your identity is never included in the message</li>
+                        <li>Phone numbers are used once for delivery, then gone</li>
+                    </ul>
+                </div>
+                <div class="spotlight-visual">
+                    <div class="sms-mock">
+                        <div class="sms-header">Text Message</div>
+                        <div class="sms-bubble">
+                            "A recent partner tested positive for an STI. Get tested soon."
+                        </div>
+                        <div class="sms-footer">What they receive. That's it.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====== APPLE WATCH + MORE ====== -->
+        <section class="extras" data-animate>
+            <div class="section-intro">
+                <span class="eyebrow">APPLE WATCH & MORE</span>
+                <h2>The only PrEP app<br>with full Watch support.</h2>
+            </div>
+            <div class="extras-grid">
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--green)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="1" width="14" height="22" rx="4"/><rect x="7" y="5" width="10" height="12" rx="2"/></svg>
+                    </div>
+                    <h3>Log from Your Wrist</h3>
+                    <p>Log your PrEP dose or a hookup from your Apple Watch in seconds. Ask Siri or tap the complication.</p>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--green)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Protection Ring Widget</h3>
+                    <p>Your 7-day coverage status on your home screen and lock screen. See if you're protected at a glance.</p>
+                </div>
+                <div class="f-card" data-animate>
+                    <div class="f-icon" style="--c: var(--green)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15h6"/></svg>
+                    </div>
+                    <h3>Export for Your Doctor</h3>
+                    <p>Generate a PDF health summary with your dose history, test results, and encounter count. Hand it to your provider at your next visit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PRIVACY (compact) ====== -->
+        <section class="privacy" data-animate>
+            <div class="privacy-inner">
+                <div class="privacy-text">
+                    <span class="eyebrow">PRIVATE. ENCRYPTED. YOURS.</span>
+                    <h2>Everything stays<br>on your phone.</h2>
+                    <p>No accounts. No cloud. No servers. Nothing uploaded, nothing shared. Delete the app and it's gone.</p>
+                    <ul class="check-list">
+                        <li>All data stored locally on your device</li>
+                        <li>Face ID lock and discreet notifications</li>
+                        <li>Stealth app icons: disguise it as a calculator, weather app, whatever</li>
+                    </ul>
+                    <a href="/privacy.html" class="text-link">Full privacy policy &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== FIND CARE ====== -->
+        <section class="find-care" data-animate>
+            <div class="find-care-inner">
+                <span class="eyebrow">GO GET CHECKED</span>
+                <h2>Find a clinic near you.</h2>
+                <p>PrEP providers and STI testing near your zip code. Filter by uninsured, PrEP navigators, and free testing. Your location is used once to find results, then forgotten.</p>
+            </div>
+        </section>
+
+        <!-- ====== FINAL CTA ====== -->
+        <section class="cta" data-animate>
+            <h2>Your PrEP. Your partners.<br>Your phone. <span class="accent">That's it.</span></h2>
+            <p>Free to download. No account. No sign-up. Just open it and go.</p>
+            <a href="#" class="btn-primary btn-large">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download PrEPPED+ Free
             </a>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 PrEPPED+. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms &amp; Conditions</a>
-            <a href="/support.html">Support</a>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo">PrEPPED+</span>
+                <p>The sexual health app built for gay men on PrEP.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms &amp; Conditions</a>
+                <a href="/disclaimer.html">Disclaimer</a>
+                <a href="/support.html">Support</a>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 PrEPPED+. All rights reserved.</p>
+                <p>PrEPPED+ does not provide medical advice. <a href="/disclaimer.html">Learn more</a>.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+    // Scroll animations
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('[data-animate]').forEach(el => io.observe(el));
+
+    // Hero stagger entrance
+    window.addEventListener('load', () => document.body.classList.add('loaded'));
+
+    // Hero parallax on mouse move
+    const heroPhoto = document.querySelector('.hero-photo img');
+    const hero = document.querySelector('.hero');
+    if (hero && heroPhoto) {
+        hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            heroPhoto.style.transform = `scale(1.05) translate(${x * -15}px, ${y * -10}px)`;
+        });
+        hero.addEventListener('mouseleave', () => {
+            heroPhoto.style.transform = '';
+        });
+    }
+
+    // Card tilt on hover
+    document.querySelectorAll('.f-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `translateY(-4px) perspective(800px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+        });
+    });
+
+    // Parallax orbs on scroll
+    window.addEventListener('scroll', () => {
+        const s = window.scrollY;
+        document.querySelectorAll('.orb').forEach((orb, i) => {
+            const speed = 0.03 + i * 0.015;
+            orb.style.transform = `translateY(${s * speed}px)`;
+        });
+    }, { passive: true });
+
+    // Nav background darken on scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        nav.style.background = window.scrollY > 100
+            ? 'rgba(12,11,15,0.92)'
+            : 'rgba(12,11,15,0.75)';
+    }, { passive: true });
+    </script>
 </body>
 </html>
