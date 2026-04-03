@@ -199,6 +199,14 @@ main {
     text-decoration: underline;
 }
 
+.legal h3.faq-question {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
 /* Footer */
 footer {
     max-width: 720px;
@@ -230,6 +238,10 @@ footer p {
 
 .footer-links a:hover {
     color: var(--text);
+}
+
+.links-section .card-link:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
 }
 
 @media (max-width: 520px) {
